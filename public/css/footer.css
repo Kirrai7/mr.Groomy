@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Ubuntu-Light;
+    src: url(../fonts/Ubuntu-Light.ttf);
+    }
+    body{
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+.one{
+    display: flex;
+}
+.f{
+    display: flex;
+    background-color: #613650;
+	width: 100%; 
+    
+}
+.logo_f_img{
+    width: 150px;
+    margin-left: 90px;
+    margin-top: 5px;
+    padding-top:5px;
+}
+.ul_f { 
+	width: 100%;
+	font-size: 10px;
+    padding-left: 150px;  
+}  
+.f li { 
+	font-size: 15px;
+	text-align: center;
+	list-style: none;
+	padding: 2%;
+	margin-top: 2%;
+}
+.f p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+    color: white;
+    line-height:1.5;
+}
+
+li a{
+    text-decoration: none;
+    color:white;
+}
+li a:hover{
+    color: #dec9c9;
+    background-size: 100% 2px;
+}
+li a { 
+	text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: white;
+}
+
+.soc{
+    width: 30px;
+    padding-top: 5px;
+    opacity: 80%;
+}
+.soc_container{
+    padding-left: 70px;
+}
+@media screen and (max-width: 980px){
+    .f{
+        background-color: #613650;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-bottom: 5px;  
+    }
+    .contact{
+        margin-left: 60px;
+    }
+    .logo_f_img{
+        width: 180px;
+        padding-right: 10px;
+        margin-top: 15%;
+        padding-top:5px;
+        margin-left: 7px;
+    }
+    .hr{
+        border-top: 1px solid rgb(243, 234, 234);
+        padding-right: 10px;
+    }
+    .f li { 
+        display: inline-block;
+        width: 150px;
+    }
+
+    .soc_container{
+        border-top: 1px solid rgb(243, 234, 234);
+        padding-left: 0%;
+        text-align: center;
+    }
+    }

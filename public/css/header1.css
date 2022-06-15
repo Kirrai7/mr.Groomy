@@ -1,0 +1,366 @@
+   *{
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: Ubuntu-Light;
+        src: url(fonts/Ubuntu-Light.ttf);
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;
+        }
+      body {
+        margin: 0;
+        font-family: Helvetica, sans-serif;
+        background-color: #f4f4f4;
+      }
+       ul li a{
+        
+        font-size:19px;
+        padding:7px 19px;
+        display:inline-block;
+        text-decoration:none;
+        color: white;
+    }
+      #but1 a{
+        text-decoration:none;
+        color: #ffffff;
+      }
+      a {
+        text-decoration:none;
+        color: #000;
+      }
+      
+      /* header */
+      
+      .header {
+        /* background-color: #613650; */
+        background-color: #5e2d4a;
+        /* box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1); */
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+
+      }
+      #logo img{
+        float:left;
+        text-transform:uppercase;
+        width:200px;
+        text-decoration:none;
+        padding:11px 0
+    }
+      
+      .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+      }
+      
+      ul a { 
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+        
+    }
+    ul li a:hover{
+        text-decoration: none;
+        color: #dec9c9;
+        background-size: 90% 2px;
+    }
+
+      
+      /* menu */
+      
+      .header .menu {
+        clear: both;
+        max-height: 0;
+        transition: max-height .2s ease-out;
+       
+      }
+      
+      /* menu icon */
+      
+      .header .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+        
+        color: rgb(154, 8, 8);
+      }
+      
+      .header .menu-icon .navicon {
+        background: #dec9c9;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+      }
+      
+      .header .menu-icon .navicon:before,
+      .header .menu-icon .navicon:after {
+        background: #dec9c9;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+      }
+      
+      .header .menu-icon .navicon:before {
+        top: 5px;
+      }
+      
+      .header .menu-icon .navicon:after {
+        top: -5px;
+      }
+      
+      /* menu btn */
+      
+      .header .menu-btn {
+        display: none;
+      }
+      
+      .header .menu-btn:checked ~ .menu {
+        max-height: 370px;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon {
+        background: transparent;
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:before {
+        transform: rotate(-45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon .navicon:after {
+        transform: rotate(45deg);
+      }
+      
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+      .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+        top: 0;
+      }
+      
+      /* 48em = 768px */
+      
+      @media (min-width: 800px) {
+        .header li {
+          float: left;
+          
+        }
+        .header li a {
+          padding: 20px 30px;
+        }
+        .header .menu {
+          clear: none;
+          float: right;
+          max-height: none;
+          
+        }
+        .header .menu-icon {
+          display: none;
+        } 
+      }
+      
+      .border-button {
+        text-decoration: none;
+        background-color: #836878;
+        position: relative;
+        margin-right: 55px;
+        margin-top: 20px;
+        padding-right: 2px;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, .4);
+        font-size: 14px;
+        text-transform: uppercase;
+        width: 120px;
+        height: 33px;
+      }
+      .border-button:before, .border-button:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        box-sizing: border-box;
+      }
+      .border-button:before {
+        bottom: 0;
+        left: 0;
+        border-left: 1px solid white;
+        border-top: 1px solid white;
+        transition: 0s ease opacity .8s, .2s ease width .4s, .2s ease height .6s;
+      }
+      .border-button:after {
+        top: 0;
+        right: 0;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        transition: 0s ease opacity .4s, .2s ease width, .2s ease height .2s;
+      }
+      .border-button:hover:before, 
+      .border-button:hover:after {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+      }
+      .border-button:hover:before {
+        transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s;
+      }
+      .border-button:hover:after {
+        transition: 0s ease opacity .4s, .2s ease height .4s, .2s ease width .6s;
+      }
+      .border-button:hover {
+        background: rgba(177, 139, 139, 0.63);
+      }
+    
+
+
+      /* ----- Модальное окно ----- */
+      #modal{
+        position: fixed;  
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.81);
+        z-index: 5;  
+        display: none;
+        overflow: auto;
+      }
+      
+      #form1{
+        position: absolute;
+        top: 22%;
+        left: 45%;
+        padding: 20px;
+        width: 400px;
+        background: #fff;
+        margin: -110px -110px; 
+        z-index: 1;
+        background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .inputForm {
+        font-family: "Roboto", sans-serif;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      #form1 h5{
+          text-align: center;
+      }
+     
+
+      /* Модальное окно 2 */
+      #modal2{
+        position: fixed;  
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.81);
+        z-index: 5;  
+        display: none;
+        overflow: auto;
+      }
+      
+      #form2{
+        position: absolute;
+        top: 22%;
+        left: 45%;
+        padding: 20px;
+        width: 400px;
+        background: #fff;
+        margin: -110px -110px; 
+        z-index: 1;
+        background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+      }
+      .inputForm {
+        font-family: "Roboto", sans-serif;
+        background: #f2f2f2;
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 5px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+      #form2 h5{
+          text-align: center;
+      }
+    /* -------------Выбор услуг в модальном окне--------- */
+    
+
+    #Form2{
+      background-color: #333;
+    }
+
+    /* Форма 2 */
+    /* #modal2 {
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.81);
+      z-index: 5;
+      display: none;
+      overflow: auto;
+      padding: 300px;
+  } */
+
+  #form2 {
+    visibility: hidden;
+    opacity: 0;  
+      position: absolute;
+      top: 22%;
+      left: 45%;
+      padding: 20px;
+      width: 400px;
+      height: 350px;
+      background: #fff;
+      margin: -110px -110px;
+      z-index: 1;
+      background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+
+  /* div {
+    background: black;
+    color: white;
+    padding: 100px;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: all 1s;
+    visibility: hidden;
+    opacity: 0;  
+  } */
+  
+  #form2.show {
+    opacity: 1;
+    visibility: visible;
+  }
+      

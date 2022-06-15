@@ -1,0 +1,231 @@
+.content{
+   
+    padding-top: 50px;
+    padding-bottom:150px;
+    background: 
+    linear-gradient(
+        rgba(223, 144, 137, 0.7),
+        rgba(221, 157, 199, 0.8),
+        rgba(189, 137, 223, 0.9)
+      );
+      /* background: 
+    linear-gradient(
+        rgba(251, 139, 166, 0.70),
+        rgba(224, 140, 194, 0.8),
+        rgba(194,139,228, 0.9)
+      ); */
+    background-size: cover;
+    
+  }
+  
+  #square,#square2  {
+    margin-top: 105px;
+    position: relative;
+    width: 800px;
+    height: 540px;
+    display: block;
+    margin: 20px auto;
+    background: #F3F6F8;
+    
+  }
+      
+  #leftSquare,#leftSquare2 {
+      width: 40%;
+    display: block;
+    margin:  auto;
+      height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+      /* background:linear-gradient(
+        rgba(251, 139, 166, 0.70),
+        rgba(224, 140, 194, 0.8),
+        rgba(194,139,228, 0.9)
+      ),  url(""); */
+    
+    background-size: cover;
+    border-radius: 0%;
+    z-index: 1;
+  }
+  
+  #rightSquare,#rightSquare2 {
+      width: 60%;
+    display: block;
+    margin:  auto;
+      height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+      background:none;
+    background-size: cover;
+    border-radius: 0%;
+    z-index: 1;
+  }
+  
+  #circle,#circle2{
+      border-radius: 50%;
+      width: 60%;
+      height: 40%;
+      display: block;
+      margin: auto;
+      position: absolute;
+      top: 8%;
+      right: 20%;
+    }
+  
+  .brand{
+    position: absolute;
+    display: block;
+    top: 38%;
+    left: 25%;
+    margin: auto;
+    width: 60%;
+    height: 60%;
+    z-index: 1;
+    
+  }
+  
+  #title,#title2 {
+    position: absolute;
+    left: 21%;
+    bottom: 37%;
+    color: white;
+    font-family:"lato";
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.164);
+  }
+  #subtitle,#subtitle2 {
+    position: absolute;
+    left: 7%;
+    bottom: 32%;
+    color: white;
+    font-family:"lato";
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.164);
+  }
+  
+  #container,#container2{
+      margin-top: 15%;
+  }
+  
+  .signup{
+    color: rgb(228, 162, 208);
+    font-family:"lato";
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 3;
+    margin-bottom: 15px;
+  }
+  
+  .button{
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    z-index: 3;
+    background: #2BA0EE;
+  }
+  
+  #twitter{
+    
+    padding-left: 10px;
+  }
+  
+  #footer{
+    display: block;
+    margin: auto;
+    color: #333333;
+    font-family:"lato";
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    z-index: 3;
+  }
+  
+  #terms{
+    cursor: pointer;
+    color: #FBADC1;
+  }
+  form{
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .optin{
+    
+     -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 75%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 17px;
+    color: #333333;
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    font-weight: 300;
+    
+    
+  }
+  .optin:hover{
+      background-color: rgba(255, 255, 255, 0.4);
+  }
+  .optin:focus {
+    background-color: white;
+    width: 80%;
+    color: #CD98E3;
+  }
+
+/* ----------выбор услуг---------- */
+#reveal-wrap {
+    bottom:0;
+    width: 100%;
+    padding-bottom:0;
+    z-index: 100;
+        }
+
+#reveal-click {
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 60px;
+  }
+#hidden-div{
+    width:75%;
+    color: #000;
+    margin-left: 60px;
+    overflow-x:hidden; 
+    font-family: "Roboto", sans-serif;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+#reveal-wrap #hidden-div {
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  #leftSquare,#leftSquare2{
+    display: none;
+  }
+  #square,#square2{
+    width: 500px;
+  }
+  #rightSquare,#rightSquare2 {
+    width: 100%;
+}
+}

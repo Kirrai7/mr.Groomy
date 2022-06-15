@@ -1,0 +1,343 @@
+/* .baner{
+    background-image: url(/img/hotel/02.jpg);
+  
+    background-size: cover;
+    height: 100%;
+} */
+.mainContent {
+    overflow-x: hidden;
+    background-color: rgb(255, 253, 253);
+}
+
+.imgMain {
+    width: 100vw;
+    margin-top: 50px;
+}
+
+#entry {
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(157, 91, 65)
+}
+
+
+.icon div img {
+    width: 140px;
+}
+
+.icon {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    text-align: center;
+}
+
+.icon div p {
+    font-size: 25px;
+    color: rgb(241, 94, 94);
+}
+
+#wherefore {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(241, 94, 94);
+}
+
+#whatGet {
+    padding-top: 15px;
+    height: 420px;
+    background: -webkit-linear-gradient(45deg, rgb(207, 223, 240), rgb(223, 168, 148));
+    background: -moz-linear-gradient(45deg, rgb(207, 223, 240), rgb(223, 168, 148));
+    background: linear-gradient(45deg, rgb(207, 223, 240), rgb(223, 168, 148));
+    text-align: center;
+    /* background-color: rgb(173, 194, 196); */
+}
+
+#whatGet h3 {
+    padding-left: 335px;
+    font-weight: bold;
+    color: white;
+}
+
+.whatGetIcon {
+    padding-top: 15;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 40%);
+    font-size: 21px;
+    text-align: center;
+    color: white;
+}
+
+.whatGetIcon div img {
+    width: 110px;
+}
+
+.whatGetImg {
+    grid-row: 1/3;
+    margin-top:11px
+}
+
+#rules {
+    padding: 15px;
+    font-size: 22px;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(58, 0, 0);
+    padding-bottom: 34px;
+}
+
+
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1eded;
+    padding-left: 95px;
+    display: grid;
+    grid-template-columns: repeat(3, 10%);
+}
+.t{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ede7e7;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #e3dbdb;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 60px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+td {
+    font-size: 20px;
+    color: rgb(46, 0, 0);
+
+}
+
+.price {
+    font-size: 22px;
+    color: darkred;
+    padding-top: 40px;
+    width: 200px;
+}
+.panel-heading{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 78% 22%;
+    padding-top: 10px;
+}
+.panel-heading .rec {
+    font-size: 18px;
+    border-radius: 90pt;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 8px;
+    
+}
+
+.panel-collapse {
+    display: grid;
+    grid-template-columns: 74% 26%;
+    padding-top: 15px;
+}
+
+
+/* ----- Модальное окно ----- */
+#modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.81);
+    z-index: 5;
+    display: none;
+    overflow: auto;
+}
+
+#form1 {
+    position: absolute;
+    top: 22%;
+    left: 45%;
+    padding: 20px;
+    width: 400px;
+    background: #fff;
+    margin: -110px -110px;
+    z-index: 1;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.inputForm {
+    font-family: "Roboto", sans-serif;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#form1 h5 {
+    text-align: center;
+}
+
+.alert {
+    width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ----------выбор комнаты---------- */
+#reveal-wrap {
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 0;
+    z-index: 100;
+}
+
+#reveal-click {
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+#hidden-div {
+    width: 85%;
+    color: #000;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+
+}
+
+#reveal-wrap #hidden-div {
+    display: none;
+}
+
+.optin {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 75%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 17px;
+    color: #333333;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    font-weight: 300;
+}
+
+.optin:focus {
+    background-color: white;
+    width: 80%;
+    color: #CD98E3;
+}
+
+@media screen and (max-width: 880px) {
+    #wherefore img{
+        width: 60px;
+    }
+    #wherefore p{
+        font-size: 15px;
+    }
+    .whatGetIcon div img{
+        width: 70px;
+    }
+    .whatGetIcon{
+        font-size: 17px;
+    }
+    .whatGetImg{
+        margin-top: 153px;
+    }
+    #whatGet h3{
+        font-size: 20px;
+        padding-left: 20%;
+    }
+    #whatGet{
+        height: 350;
+    }
+    #rules{
+        font-size: 18px;
+    }
+    .tab{
+        grid-template-columns: repeat(3,33%);
+    }
+    .price {
+        font-size: 16px;
+    }
+    .panel-heading .rec {
+        width:150px;
+        padding: 5px;
+    }
+    .panel-heading{
+        grid-template-columns: 55% 45%;
+        margin-top: 15px;
+    }
+    .panel-collapse{
+        padding-top: 15px;
+    }
+    .panel-heading .more{
+        width:150px;
+    }
+    .panel-body{
+        font-size: 12px;
+    }
+    .tabcontent {
+        display: none;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-top: none;
+    
+    }
+    .t{
+        font-size: 13px;
+    }
+    
+}

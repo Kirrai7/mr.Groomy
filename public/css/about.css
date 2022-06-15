@@ -1,0 +1,130 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.question{
+    margin: 0 auto;
+    width: 770px;
+    border-radius: 1em;
+    padding:10px;
+    padding-top:15px;
+    padding-left: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(238, 237, 236);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.blockText{
+    width: 1200px;
+    padding:5px;
+    padding-left: 25px;
+    margin: 0 auto;
+    margin-top: 5px;
+    background-color: rgb(240, 236, 231);
+    display: grid;
+    grid-template-columns: repeat(2,45%);
+    grid-column-gap:20px;
+    overflow-x:hidden; 
+}
+.blockText img{
+    width: 600px;
+}
+.blockText span{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    white-space: pre-wrap;
+    font-size: 15px;
+}
+
+.obs-el {
+    --underline-width: 0%;
+    --color: rgb(70, 62, 62);
+  
+    display: inline-block;
+    font: 400 1.5rem System-ui, Sans-serif;
+    color: var(--color);
+    text-align: center;
+    margin-left:42%;
+    padding: 15px;
+    font-size: 25px;
+  }
+  
+  .obs-el::after {
+    display: block;
+    content: "";
+    width: var(--underline-width);
+    height: 0.2rem;
+    background: var(--color);
+    transition: width 1s;
+    text-align: center;
+    
+  }
+  .obs-el1 {
+    --underline-width: 0%;
+    --color: rgb(70, 62, 62);
+  
+    display: inline-block;
+    font: 400 1.5rem System-ui, Sans-serif;
+    color: var(--color);
+    text-align: center;
+    margin-left:40%;
+    padding: 15px;
+    font-size: 25px;
+  }
+  
+  .obs-el1::after {
+    display: block;
+    content: "";
+    width: var(--underline-width);
+    height: 0.2rem;
+    background: var(--color);
+    transition: width 1s;
+    text-align: center;
+    
+  }
+  .obs-el{
+    margin-top: 60px;
+  }
+
+/* слайдер */
+
+.sliderImg {
+    object-fit: cover;
+    width: 100%;
+    height: 10%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+ .textsl{
+     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     text-align: center;
+ }
+
+ h3{
+     text-align: center;
+     padding-top: 5px;
+ }
+ .h3worker{
+     padding-top: 15px;
+     padding-bottom: 15px;
+ }
+
+ @media screen and (max-width: 880px){
+    .obs-el{
+        margin-left: 38%;
+    }
+    .obs-el1{
+        margin-left: 28%;
+    }
+    .blockText{
+       width: 98%;
+        display: block;
+    }
+    .blockText img{
+        width: 98%;
+    }
+    .question{
+        width: 90%;
+    }
+ }
